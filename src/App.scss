@@ -19,6 +19,7 @@ body {
 
 .app-container {
   .header-container {
+    position: sticky;
     background-color: #fff;
     .navbar-nav {
       .btn-login {
@@ -47,8 +48,6 @@ body {
     }
   }
   .homepage-container {
-    // display: flex;
-    // flex-direction: row;
     .homepage-content {
       position: relative;
       padding: 100px;
