@@ -19,12 +19,64 @@ body {
 
 .app-container {
   .header-container {
+    background-color: #fff;
     .navbar-nav {
+      .btn-login {
+        border: none;
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: 16px;
+        background-color: #ffff;
+        padding-right: 15px;
+      }
+      .btn-logout {
+        border: none;
+        border-radius: 10px;
+        line-height: 1.5;
+        font-size: 16px;
+        color: #fff;
+        background-color: #000;
+        padding: 10px 15px 10px 15px;
+        font-weight: 500;
+      }
       .nav-link {
         &.active {
           color: #00bfff;
         }
       }
+    }
+  }
+  .homepage-container {
+    // display: flex;
+    // flex-direction: row;
+    .homepage-content {
+      position: relative;
+      padding: 100px;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .homepage-title {
+        font-size: 60px;
+      }
+      .homepage-description {
+        font-size: 20px;
+      }
+      .homepage-button {
+        padding: 12px 24px;
+        border-radius: 12px;
+        background-color: #191919;
+        color: #fff;
+        font-size: 16px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    video {
+      position: fixed;
+      left: 45%;
+      width: 50%;
     }
   }
 }
