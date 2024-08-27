@@ -22,10 +22,6 @@ function ModalDeleteUser(props) {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
-
       <Modal show={show} onHide={handleClose} backdrop="static">
         <Modal.Header closeButton>
           <Modal.Title>Confirm Delete User</Modal.Title>
