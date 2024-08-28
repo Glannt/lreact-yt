@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { postCreateNewUser } from "../services/apiService";
 
 function ModalCreateUser(props) {
-  const { show, setShow, fetchAllUser } = props;
+  const { show, setShow } = props;
   const handleClose = () => {
     setEmail("");
     setPassword("");
@@ -54,7 +54,8 @@ function ModalCreateUser(props) {
     if (data && data.EC === 0) {
       toast.success(data.EM);
       handleClose();
-      await fetchAllUser();
+      // await fetchAllUser();
+      await props.fetchAllUserWithPaginate(1);
     }
     if (data && data.EC !== 0) {
       toast.error(data.ER);
