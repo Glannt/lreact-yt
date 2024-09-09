@@ -1,8 +1,29 @@
 .login-container {
   .header {
     height: 45px;
-    text-align: right;
-    border: 1px solid red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 100px;
+    span {
+      padding: 0 10px;
+    }
+    .btn-signup {
+      border: none;
+      border-radius: 10px;
+      line-height: 1.5;
+      font-size: 16px;
+      color: #fff;
+      background-color: #000;
+      padding: 10px 15px 10px 15px;
+      font-weight: 500;
+      &:hover {
+        box-shadow: inset 2px 2px 10px #ccc;
+        scale: 0.9;
+        transition: linear 0.2s;
+      }
+    }
   }
   .title {
     font-size: 25px;
@@ -12,6 +33,7 @@
   .welcome {
     font-size: 20px;
     padding: 10px 0;
+    text-align: center;
   }
   .content-form {
     display: flex;
@@ -28,6 +50,15 @@
       color: #fff;
       border: none;
       border-radius: 5px;
+    }
+    .backHomePage {
+      cursor: pointer;
+      &:hover {
+        background-color: #ccc;
+        border-radius: 5px;
+        padding: 0 10px;
+        transition: ease-out 0.25s;
+      }
     }
   }
 }
